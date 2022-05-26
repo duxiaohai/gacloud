@@ -1,0 +1,15 @@
+# 基础镜像
+FROM  openjdk:8-jre
+# author
+MAINTAINER ga
+
+# 挂载目录
+VOLUME /home/ga
+# 创建目录
+RUN mkdir -p /home/ga
+# 指定路径
+WORKDIR /home/ga
+# 复制jar文件到路径
+COPY ./jar/ga-modules-gen.jar /home/ga/ga-modules-gen.jar
+# 启动代码生成服务
+ENTRYPOINT ["java","-jar","ga-modules-gen.jar"]
