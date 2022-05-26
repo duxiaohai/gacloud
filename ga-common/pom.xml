@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>gacloud</artifactId>
+        <groupId>com.ga</groupId>
+        <version>3.5.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <modules>
+        <module>ga-common-core</module>
+        <module>ga-common-datascope</module>
+        <module>ga-common-datasource</module>
+        <module>ga-common-log</module>
+        <module>ga-common-redis</module>
+        <module>ga-common-security</module>
+        <module>ga-common-swagger</module>
+    </modules>
+
+
+    <artifactId>ga-common</artifactId>
+    <packaging>pom</packaging>
+
+    <description>
+        ga-common通用模块
+    </description>
+
+
+</project>
